@@ -166,10 +166,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  border: 1px solid gray;
+}
 .nav {
   display: flex;
   text-emphasis: bold;
-  width: 40%;
 }
 .nav a {
   display: flex;
@@ -180,35 +182,39 @@ img {
   font-size: 28px;
   border: none;
   cursor: grabbing;
-  word-spacing: 6%;
-  padding: 4px;
-  margin: 4px 10px;
+  padding: 5px;
+  margin: 4px;
+  word-spacing: 20px;
 }
-.header {
+body {
+  background: url(https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat center center fixed;
+  width: 100%;
+  opacity: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body header {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   background: darkblue;
   justify-content: center;
-  margin: 4px 3px;
-  margin: 0 10px;
 }
-.header .name {
+body header .name {
   display: flex;
   color: white;
   font-size: large;
-  width: 30%;
   letter-spacing: 2.5px;
   margin: 0 2px;
-  margin-left: 15px;
 }
-.header .login {
+body header .login {
   display: flex;
   text-emphasis: bold;
   text-decoration: none;
-  width: 30%;
 }
-.header .login button {
+body header .login button {
   display: flex;
   color: white;
   background: darkblue;
@@ -216,14 +222,6 @@ img {
   border: none;
   cursor: grabbing;
   letter-spacing: 2px;
-}
-body {
-  background: url(https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat center center fixed;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 body .top-main {
   display: flex;
@@ -253,81 +251,96 @@ body .top-main .top-content button {
   cursor: pointer;
   margin-bottom: 10px;
 }
-body .center-info {
+body .all {
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  margin: 15px 20px;
+  justify-content: center;
+}
+body .all .center-info {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  align-content: center;
 }
-body .center-info .access {
+body .all .center-info .access {
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
-body .center-info .access h2 {
+body .all .center-info .access h2 {
   font-size: 20px;
   color: #050518;
 }
-body .center-info .access p {
+body .all .center-info .access p {
   color: #050518;
   font-size: 40px;
 }
-body .center-info .healthy {
+body .all .center-info .healthy {
   display: flex;
   flex-direction: column;
-}
-body .center-info .healthy h2 {
-  font-size: 20px;
-  color: #050518;
-}
-body .center-info .healthy p {
-  color: #050518;
-  font-size: 40px;
-}
-body .center-info .staff {
-  display: flex;
-  flex-direction: column;
-}
-body .center-info .staff h2 {
-  font-size: 20px;
-  color: #050518;
-}
-body .center-info .staff p {
-  color: #050518;
-  font-size: 40px;
-}
-body .bannerbtm {
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
-body .bannerbtm button {
+body .all .center-info .healthy h2 {
+  font-size: 20px;
+  color: #050518;
+}
+body .all .center-info .healthy p {
+  color: #050518;
+  font-size: 40px;
+}
+body .all .center-info .staff {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body .all .center-info .staff h2 {
+  font-size: 20px;
+  color: #050518;
+}
+body .all .center-info .staff p {
+  color: #050518;
+  font-size: 40px;
+}
+body .banner {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+body .banner .bannerbtm {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  background: darkblue;
+}
+body .banner .bannerbtm button {
+  border: none;
   background-color: darkblue;
   color: white;
+  justify-content: center;
 }
-.header {
+header {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   background: darkblue;
   justify-content: center;
-  margin: 4px 3px;
-  margin: 0 10px;
 }
-.header .name {
+header .name {
   display: flex;
   color: white;
   font-size: large;
-  width: 30%;
   letter-spacing: 2.5px;
   margin: 0 2px;
 }
-.header .login {
+header .login {
   display: flex;
   text-emphasis: bold;
   text-decoration: none;
-  width: 30%;
 }
-.header .login button {
+header .login button {
   display: flex;
   color: white;
   background: darkblue;
@@ -336,10 +349,39 @@ body .bannerbtm button {
   cursor: grabbing;
   letter-spacing: 2px;
 }
+body .background {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+body .background h2 {
+  display: flex;
+  color: #050518;
+}
+body .background p {
+  display: flex;
+  color: #050518;
+}
+body .how {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+body .how h2 {
+  display: flex;
+  color: #050518;
+}
+body .how p {
+  display: flex;
+  color: #050518;
+}
 body .bannerbtm {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
+  background: darkblue;
+  justify-content: center;
+  margin: 4px 3px;
 }
 body .bannerbtm button {
   background-color: darkblue;
