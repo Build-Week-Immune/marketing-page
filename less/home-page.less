@@ -13,7 +13,7 @@
         width: 30%;
         letter-spacing: 2.5px;
         margin: 0 2px;
-    }
+    }//closes name
     .login {
         display: flex;
         text-emphasis: bold;
@@ -27,9 +27,9 @@
             border: none;
             cursor: grabbing;
             letter-spacing: 2px;
-        }
-    }
-}
+        }//closes button
+    }//closes login
+}//closes header
 body{
     background: url(https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat center center fixed;
     width: 100%;
@@ -39,11 +39,81 @@ body{
     background-size: cover;
     .top-main {
         display: flex;
-        flex-direction: column;
+        width: 80%;
+        padding: 20px;
+        margin: 15px 20px;
+        justify-content: center;
         .top-content {
+            justify-content: center;
             color: white;
+            text-align: center;
             text-emphasis: bold;
             text-decoration: none;
-        }
-    }
-}
+            h2 {
+                font-size: 20px;
+                color: darkblue;
+            }//h2
+            p {
+                font-size: 40px;
+            }//p
+            button {
+                color: darkblue;
+                background-color: white;
+                border: 1px solid blue;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }//button
+        }//top-content
+    }//top-main
+    .center-info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        .access {
+            display: flex; 
+            flex-direction: column;
+            h2 {
+                font-size: 20px;
+                color: rgb(5, 5, 24);
+            }//closes h2
+            p {
+                color: rgb(5, 5, 24);
+                font-size: 40px;
+            }//closes p
+        }//closes access
+        .healthy {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-size: 20px;
+                color: rgb(5, 5, 24);
+            }//closes h2
+            p {
+                color: rgb(5, 5, 24);
+                font-size: 40px;
+            }//closes p
+        }//closes healthy
+        .staff {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-size: 20px;
+                color: rgb(5, 5, 24);
+            }//closes h2
+            p {
+                color: rgb(5, 5, 24);
+                font-size: 40px;
+            }//closes p
+        }//staff
+    }//closes center-info
+    .bannerbtm {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        button {
+            background-color: darkblue;
+            color: white;
+        }//button
+    }//bannerbtm
+}//body 
