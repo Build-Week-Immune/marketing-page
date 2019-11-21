@@ -321,26 +321,32 @@ body .banner .bannerbtm button {
   color: white;
   justify-content: center;
 }
-header {
+.all {
+  display: flex;
+  width: 60%;
+  margin: 15px 20px;
+  align-content: center;
+}
+.all header {
   display: flex;
   flex-direction: row;
   width: 80%;
   background: darkblue;
   justify-content: center;
 }
-header .name {
+.all header .name {
   display: flex;
   color: white;
   font-size: large;
   letter-spacing: 2.5px;
   margin: 0 2px;
 }
-header .login {
+.all header .login {
   display: flex;
   text-emphasis: bold;
   text-decoration: none;
 }
-header .login button {
+.all header .login button {
   display: flex;
   color: white;
   background: darkblue;
@@ -349,41 +355,57 @@ header .login button {
   cursor: grabbing;
   letter-spacing: 2px;
 }
-body .background {
+.btm {
   display: flex;
-  width: 70%;
   flex-direction: column;
-}
-body .background h2 {
-  display: flex;
-  color: #050518;
-}
-body .background p {
-  display: flex;
-  color: #050518;
-}
-body .how {
-  display: flex;
-  width: 70%;
-  flex-direction: column;
-}
-body .how h2 {
-  display: flex;
-  color: #050518;
-}
-body .how p {
-  display: flex;
-  color: #050518;
-}
-body .bannerbtm {
-  display: flex;
-  flex-direction: row;
   width: 80%;
+  margin: 0 20%;
+}
+.btm body {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+.btm body .main1 {
+  display: flex;
+  flex-direction: column;
+}
+.btm body .main1 .background {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  margin: auto;
+}
+.btm body .main1 .background h2 {
+  display: flex;
+  color: #050518;
+}
+.btm body .main1 .background p {
+  display: flex;
+  color: #050518;
+}
+.btm body .main1 .how {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.btm body .main1 .how h2 {
+  display: flex;
+  color: #050518;
+}
+.btm body .main1 .how p {
+  display: flex;
+  color: #050518;
+}
+.btm body .main1 .bannerbtm {
+  display: flex;
   background: darkblue;
   justify-content: center;
-  margin: 4px 3px;
+  margin: 4px 20%;
 }
-body .bannerbtm button {
+.btm body .main1 .bannerbtm button {
   background-color: darkblue;
   color: white;
+  border: none;
+  justify-content: center;
 }
