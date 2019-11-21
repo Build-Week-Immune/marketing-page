@@ -31,10 +31,20 @@
                 }//closes button
             }//closes login
         }//closes header
+        @singlequery2: ~"(max-width: 1000px)";
+        @media screen2, @singleQuery2 {
+            set {
+                padding: 5 5 5 5;
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }//closes all
     .btm {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         width: 80%;
         margin: 0 20%;
         body {
@@ -42,8 +52,10 @@
         width: 60%;
         justify-content: center;
         .main1 {
-            display: flex;
-            flex-direction: column;
+            .display2 {
+                display: flex;
+                flex-direction: column;
+            }
             .background {
                 display: flex;
                 width: 70%;
@@ -85,51 +97,81 @@
         }//bannerbtm
     }//body
 }//main1
+@singlequery2: ~"(max-width: 1000px)";
+@media screen2, @singleQuery2 {
+    set {
+        padding: 5 5 5 5;
+        display: flex;
+        flex-direction: column;
+    }
+}
 }//btm
 .w3-display-container {
     display: flex;
     flex-direction: row;
     .w3-card1 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
         padding: 4px;
     }
     .w3-card2 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
     }
     .w3-card3 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
     }
     .w3-card4 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
     }
     .w3-card5 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
     }
     .w3-card6 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
     }
     .w3-card7 {
-        display: flex;
-        flex-direction: column;
+        .display2 {
+            display: flex;
+            flex-direction: column;
+        }
         border: 1px solid black;
         background-color: blanchedalmond;
     }
+    @singlequery2: ~"(max-width: 1000px)";
+@media screen2, @singleQuery2 {
+    set {
+        padding: 5 5 5 5;
+        display: flex;
+        flex-direction: column;
+    }
+}
 }
